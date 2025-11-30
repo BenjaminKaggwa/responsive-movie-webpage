@@ -1,0 +1,219 @@
+/* Global reset - remove default margins from all elements */
+* {
+  margin: 0;
+}
+
+/* Body styling - set default font */
+body {
+  font-family: "Roboto", sans-serif;
+
+}
+
+/* Top navigation bar styling */
+.navbar{
+    background-color: black;
+    width: 100%;           /* Full width of the screen */
+    height: 50px; 
+    top: 0%;         /* Fixed height */
+ 
+   
+ 
+}
+/* Navbar container - holds logo, menu, and profile */
+.navbar-container{
+    display: flex;              /* Enable flexbox layout */
+    /* flex-direction: row; */ /* Default is row (horizontal) */
+    align-items: center;        /* Vertically center all items */
+    padding: 0 50px;            /* Add horizontal padding */
+    height: 100%;               /* Match parent navbar height (50px) */
+    color: white;               /* Default text color */
+}
+/* Logo container - takes 1 part of available space (11% of navbar) */
+.logo-container{
+    flex: 1;                    /* Takes 1/9 of total width */
+}
+/* Logo text styling */
+.logo{
+    font-family: 'sen','sans-serif';  /* Custom font */
+    color: #4dbf00;                   /* Bright green color */
+}
+/* Menu container - takes 6 parts of available space (67% of navbar) */
+.menu-container{
+    flex: 6;                          /* Takes 6/9 of total width */
+    font-family: 'sen','sans-serif';  /* Custom font */
+    font-weight: bold;                /* Make menu items bold */
+}
+/* Menu list - horizontal navigation items */
+.menu-list{
+    display: flex;              /* Arrange items horizontally */
+    list-style: none;           /* Remove bullet points */
+}
+/* Individual menu items */
+.menu-list-item{
+    margin-right: 30px;         /* Add spacing between menu items */
+}
+/* Profile container - takes 2 parts of available space (22% of navbar) */
+.profile-container{
+    flex: 2;                    /* Takes 2/9 of total width */
+    display: flex;              /* Enable flexbox for inner items */
+    align-items: center;        /* Vertically center profile items */
+    justify-content: flex-end;  /* Align items to the right */
+} 
+/* Profile picture styling */
+.profile-picture{
+    width: 32px;                /* Fixed width */
+    height: 32px;               /* Fixed height */
+    border-radius: 50%;         /* Make it circular */
+    object-fit: cover;          /* Crop image to fit without distortion */
+
+}
+/* Profile text and dropdown icon container */
+.profile-text-container{
+    margin: 0 20px;             /* Horizontal spacing */
+    margin-right: 20px;         /* Extra space on the right */
+}
+/* Dark/Light mode toggle switch */
+.toogle{
+    position: relative;         /* For absolute positioning of toggle ball */
+    display: flex;              /* Arrange moon and sun icons */
+    width: 40px;                /* Toggle width */
+    height: 20px;               /* Toggle height */
+    border-radius: 30px;        /* Rounded pill shape */
+    background-color: white;    /* White background */
+    align-items: center;        /* Center icons vertically */
+    justify-content: space-around; /* Space icons evenly */
+}
+
+/* Sliding ball indicator for toggle */
+.toogle-ball{
+    background-color: black;    /* Black ball */
+    cursor: pointer;            /* Show it's clickable */
+    position: absolute;         /* Position relative to .toogle */
+    right: 1px;                 /* Start on the right (light mode) */
+    width: 19px;                /* Ball width */
+    height: 18px;               /* Ball height */
+    border-radius: 50%;         /* Make it circular */
+}
+
+
+/* Sidebar styling - fixed vertical navigation */
+.sidebar{
+
+    width: 50px;                /* Narrow fixed width */
+    height: 100%;               /* Full height of viewport */
+    position: fixed;            /* Stays in place when scrolling */
+    top: 0;                     /* Aligned to top of screen */
+    background-color: black;    /* Black background */
+
+}
+/* Sidebar container - holds navigation icons */
+.sidebar-container{
+    display: flex;              /* Enable flexbox */
+    flex-direction: column;     /* Stack icons vertically */
+    align-items: center;        /* Center icons horizontally */
+    margin-top: 60px;           /* Space from top (below navbar) */
+    color: white;               /* White icon color */
+}
+/* Sidebar icon styling */
+.sidebar-container i{
+    font-size: 1.2em;           /* Icon size */
+    margin-bottom: 41px;        /* Spacing between icons */
+}
+/* Main content container */
+.container{
+    background-color: #151515;  /* Dark background */
+    min-height: calc(100vh - 50px); /* Full viewport height minus navbar */
+    color: white;               /* White text color */
+}
+/* Content container - offset for sidebar */
+.content-container{
+    margin-left: 50px;          /* Leave space for fixed sidebar */
+}
+/* Featured content section with background image */
+.featured-content{
+    height: 50vh; 
+    padding: 50px;              /* Half of viewport height */
+}
+.title-featured{
+    width: 200px;
+    
+
+
+}
+/* .items-featured{
+    width:600px ;
+    padding: 40px 50px;
+} */
+.desc-featured{
+    /* padding: 20px 0px; */
+    width:500px ;
+  color: lightgray;
+  margin: 30px 0;
+}
+.featured-button {
+  background-color: #4dbf00;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
+.movie-list-container{
+ /* margin-left: 25px; */
+ padding: 0 20px;
+ 
+ 
+}
+.movie-list-wrapper{
+/* padding: 45px 0; */
+overflow: hidden;
+position: relative;
+
+}
+.arrow {
+  font-size: 150px;
+
+  position: absolute;
+  top: 80px;
+  right: 0;
+  color: rgb(206, 194, 194);
+  opacity: 0.5;
+  cursor: pointer;
+}
+.movie-list{
+    /* background-color: #4dbf00; */
+    display: flex;
+    height: 300px;
+    align-items: center;
+    gap: 24px;
+    
+
+
+}
+.movie-list-item:hover .movie-list-item-image{
+    opacity: 0.5;
+    transform: scale(1.2);
+    margin: 0 30px;
+
+
+}
+.movie-list-title{
+   
+    font-weight: bold;
+    font-size: 32px;
+}
+.menu-list-item{
+    margin-right: 20px;
+;
+
+    
+
+}
+.movie-list-item-image{
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: all 1s ease-in-out;
+}

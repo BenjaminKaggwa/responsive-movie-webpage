@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <!-- Custom CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts: Roboto and Sen font families -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    
+    <!-- Font Awesome icons library (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    
+    <!-- Font Awesome icons library (Kit) -->
+    <script src="https://kit.fontawesome.com/888463a64c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Top navigation bar -->
+    <div class="navbar">
+        <div class="navbar-container">
+            <!-- Logo section -->
+            <div class="logo-container"><h1 class="logo">flakes</h1></div>
+            
+            <!-- Navigation menu -->
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item">Home</li>
+                    <li class="menu-list-item">Movies</li>
+                    <li class="menu-list-item">Series</li>
+                    <li class="menu-list-item">Popular</li>
+                    <li class="menu-list-item">Trends</li>
+                </ul>
+            </div>
+            
+            <!-- Profile section with picture, text, and theme toggle -->
+            <div class="profile-container">
+                <!-- User profile picture -->
+                <img src="img/1.jpeg" alt="" class="profile-picture">
+                
+                <!-- Profile text with dropdown icon -->
+                <div class="profile-text-container">
+                    <span class="profile-text">profile</span>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                
+                <!-- Dark/Light mode toggle switch -->
+                <div class="toogle">
+                    <i class="fa-solid fa-moon" style="color: #ffaa00;"></i>
+                    <i class="fa-solid fa-sun" style="color: #ffaa00;"></i>
+                    <div class="toogle-ball"></div> <!-- Sliding ball indicator -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Fixed left sidebar with navigation icons -->
+    <div class="sidebar">
+        <div class="sidebar-container">
+             <i class="left-menu-icon fas fa-search"></i>          <!-- Search -->
+             <i class="left-menu-icon fas fa-home"></i>            <!-- Home -->
+             <i class="left-menu-icon fas fa-users"></i>           <!-- Users/Community -->
+             <i class="left-menu-icon fas fa-bookmark"></i>        <!-- Bookmarks -->
+             <i class="left-menu-icon fas fa-tv"></i>              <!-- TV Shows -->
+             <i class="left-menu-icon fas fa-hourglass-start"></i> <!-- Watch Later -->
+             <i class="left-menu-icon fas fa-shopping-cart"></i>   <!-- Shopping Cart -->
+           
+
+        </div>
+    </div>
+    <!-- Main content container -->
+    <div class="container">
+        <div class="content-container">
+            <!-- Featured content section with background image and gradient overlay -->
+            <!-- Gradient fades from transparent to dark (#151515) for text readability -->
+            <div class="featured-content" style="background:  linear-gradient(to bottom,rgba(0,0,0,0),#151515) ,url('img/f-1.jpg');">
+                <!-- <div class="items-featured"> -->
+                    <img class="title-featured" src="img/f-t-1.png" alt="" srcset=""> 
+                    <div class="desc-featured"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto illo dolor
+                    deserunt nam assumenda ipsa eligendi dolore, ipsum id fugiat quo enim impedit, laboriosam omnis
+                    minima voluptatibus incidunt. Accusamus, provident.</p></div>
+                    <button class="featured-button" type="button">WATCH</button>
+                <!-- </div> -->
+            </div>
+            
+            <div class="movie-list-container">
+                <H1 class="movie-list-title">NEW RELEASES</H1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img src="img/18.jpg" alt="" class="movie-list-item-image">
+                            <!-- <span class="movie-list-item-title">Her</span>
+                            <p class="menu-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Modi laboriosam sunt excepturi. Animi assumenda magnam obcaecati, repellat vel cumque iste, 
+                                ratione nemo molestiae repellendus quasi quaerat fuga itaque adipisci necessitatibus!</p>
+                                <button class="menu-list-item-button" type="button">WATCH</button> -->
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/17.jpg" alt="" class="movie-list-item-image">
+                            <!-- <span class="movie-list-item-title">Her</span>
+                            <p class="menu-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Modi laboriosam sunt excepturi. Animi assumenda magnam obcaecati, repellat vel cumque iste, 
+                                ratione nemo molestiae repellendus quasi quaerat fuga itaque adipisci necessitatibus!</p>
+                                <button class="menu-list-item-button" type="button">WATCH</button> -->
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/3.jpg" alt="" class="movie-list-item-image">
+                            <!-- <span class="movie-list-item-title">Her</span>
+                            <p class="menu-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Modi laboriosam sunt excepturi. Animi assumenda magnam obcaecati, repellat vel cumque iste, 
+                                ratione nemo molestiae repellendus quasi quaerat fuga itaque adipisci necessitatibus!</p>
+                                <button class="menu-list-item-button" type="button">WATCH</button> -->
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/4.jpg" alt="" class="movie-list-item-image">
+                            <!-- <span class="movie-list-item-title">Her</span>
+                            <p class="menu-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Modi laboriosam sunt excepturi. Animi assumenda magnam obcaecati, repellat vel cumque iste, 
+                                ratione nemo molestiae repellendus quasi quaerat fuga itaque adipisci necessitatibus!</p>
+                                <button class="menu-list-item-button" type="button">WATCH</button> -->
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/5.jpg" alt="" class="movie-list-item-image">
+                            <!-- <span class="movie-list-item-title">Her</span>
+                            <p class="menu-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Modi laboriosam sunt excepturi. Animi assumenda magnam obcaecati, repellat vel cumque iste, 
+                                ratione nemo molestiae repellendus quasi quaerat fuga itaque adipisci necessitatibus!</p>
+                                <button class="menu-list-item-button" type="button">WATCH</button> -->
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/6.jpg" alt="" class="movie-list-item-image">
+                            <!-- <span class="movie-list-item-title">Her</span>
+                            <p class="menu-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Modi laboriosam sunt excepturi. Animi assumenda magnam obcaecati, repellat vel cumque iste, 
+                                ratione nemo molestiae repellendus quasi quaerat fuga itaque adipisci necessitatibus!</p>
+                                <button class="menu-list-item-button" type="button">WATCH</button> -->
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/7.jpg" alt="" class="movie-list-item-image">
+                            <!-- <span class="movie-list-item-title">Her</span>
+                            <p class="menu-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Modi laboriosam sunt excepturi. Animi assumenda magnam obcaecati, repellat vel cumque iste, 
+                                ratione nemo molestiae repellendus quasi quaerat fuga itaque adipisci necessitatibus!</p>
+                                <button class="menu-list-item-button" type="button">WATCH</button> -->
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-angle-right arrow"></i>
+
+                </div>
+                <H1 class="movie-list-title">NEW RELEASES</H1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img src="img/8.jpg" alt="" class="movie-list-item-image">
+                            <!-- <span class="movie-list-item-title">Her</span>
+                            <p class="menu-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Modi laboriosam sunt excepturi. Animi assumenda magnam obcaecati, repellat vel cumque iste, 
+                                ratione nemo molestiae repellendus quasi quaerat fuga itaque adipisci necessitatibus!</p>
+                                <button class="menu-list-item-button" type="button">WATCH</button> -->
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/9.jpg" alt="" class="movie-list-item-image">
+                            <!-- <span class="movie-list-item-title">Her</span>
+                            <p class="menu-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Modi laboriosam sunt excepturi. Animi assumenda magnam obcaecati, repellat vel cumque iste, 
+                                ratione nemo molestiae repellendus quasi quaerat fuga itaque adipisci necessitatibus!</p>
+                                <button class="menu-list-item-button" type="button">WATCH</button> -->
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/10.jpg" alt="" class="movie-list-item-image">
+                            <!-- <span class="movie-list-item-title">Her</span>
+                            <p class="menu-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Modi laboriosam sunt excepturi. Animi assumenda magnam obcaecati, repellat vel cumque iste, 
+                                ratione nemo molestiae repellendus quasi quaerat fuga itaque adipisci necessitatibus!</p>
+                                <button class="menu-list-item-button" type="button">WATCH</button> -->
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/11.jpg" alt="" class="movie-list-item-image">
+                            <!-- <span class="movie-list-item-title">Her</span>
+                            <p class="menu-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Modi laboriosam sunt excepturi. Animi assumenda magnam obcaecati, repellat vel cumque iste, 
+                                ratione nemo molestiae repellendus quasi quaerat fuga itaque adipisci necessitatibus!</p>
+                                <button class="menu-list-item-button" type="button">WATCH</button> -->
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/12.jpg" alt="" class="movie-list-item-image">
+                            <!-- <span class="movie-list-item-title">Her</span>
+                            <p class="menu-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Modi laboriosam sunt excepturi. Animi assumenda magnam obcaecati, repellat vel cumque iste, 
+                                ratione nemo molestiae repellendus quasi quaerat fuga itaque adipisci necessitatibus!</p>
+                                <button class="menu-list-item-button" type="button">WATCH</button> -->
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/13.jpg" alt="" class="movie-list-item-image">
+                            <!-- <span class="movie-list-item-title">Her</span>
+                            <p class="menu-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Modi laboriosam sunt excepturi. Animi assumenda magnam obcaecati, repellat vel cumque iste, 
+                                ratione nemo molestiae repellendus quasi quaerat fuga itaque adipisci necessitatibus!</p>
+                                <button class="menu-list-item-button" type="button">WATCH</button> -->
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/14.jpg" alt="" class="movie-list-item-image">
+                            <!-- <span class="movie-list-item-title">Her</span>
+                            <p class="menu-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Modi laboriosam sunt excepturi. Animi assumenda magnam obcaecati, repellat vel cumque iste, 
+                                ratione nemo molestiae repellendus quasi quaerat fuga itaque adipisci necessitatibus!</p>
+                                <button class="menu-list-item-button" type="button">WATCH</button> -->
+                        </div>
+                        <i class="fa-solid fa-angle-right arrow"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="featured-content" style="background:  linear-gradient(to bottom,rgba(0,0,0,0),#151515) ,url('img/f-2.jpg');">
+                <!-- <div class="items-featured"> -->
+                    <img class="title-featured" src="img/f-t-1.png" alt="" srcset=""> 
+                    <div class="desc-featured"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto illo dolor
+                    deserunt nam assumenda ipsa eligendi dolore, ipsum id fugiat quo enim impedit, laboriosam omnis
+                    minima voluptatibus incidunt. Accusamus, provident.</p></div>
+                    <button class="featured-button" type="button">WATCH</button>
+                <!-- </div> -->
+
+            </div>
+                <H1 class="movie-list-title">NEW RELEASES</H1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img src="img/9.jpg" alt="" class="movie-list-item-image">
+                            <!-- <span class="movie-list-item-title">Her</span>
+                            <p class="menu-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Modi laboriosam sunt excepturi. Animi assumenda magnam obcaecati, repellat vel cumque iste, 
+                                ratione nemo molestiae repellendus quasi quaerat fuga itaque adipisci necessitatibus!</p>
+                                <button class="menu-list-item-button" type="button">WATCH</button> -->
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/10.jpg" alt="" class="movie-list-item-image">
+                            <!-- <span class="movie-list-item-title">Her</span>
+                            <p class="menu-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Modi laboriosam sunt excepturi. Animi assumenda magnam obcaecati, repellat vel cumque iste, 
+                                ratione nemo molestiae repellendus quasi quaerat fuga itaque adipisci necessitatibus!</p>
+                                <button class="menu-list-item-button" type="button">WATCH</button> -->
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/3.jpg" alt="" class="movie-list-item-image">
+                            <!-- <span class="movie-list-item-title">Her</span>
+                            <p class="menu-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Modi laboriosam sunt excepturi. Animi assumenda magnam obcaecati, repellat vel cumque iste, 
+                                ratione nemo molestiae repellendus quasi quaerat fuga itaque adipisci necessitatibus!</p>
+                                <button class="menu-list-item-button" type="button">WATCH</button> -->
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/4.jpg" alt="" class="movie-list-item-image">
+                            <!-- <span class="movie-list-item-title">Her</span>
+                            <p class="menu-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Modi laboriosam sunt excepturi. Animi assumenda magnam obcaecati, repellat vel cumque iste, 
+                                ratione nemo molestiae repellendus quasi quaerat fuga itaque adipisci necessitatibus!</p>
+                                <button class="menu-list-item-button" type="button">WATCH</button> -->
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/5.jpg" alt="" class="movie-list-item-image">
+                            <!-- <span class="movie-list-item-title">Her</span>
+                            <p class="menu-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Modi laboriosam sunt excepturi. Animi assumenda magnam obcaecati, repellat vel cumque iste, 
+                                ratione nemo molestiae repellendus quasi quaerat fuga itaque adipisci necessitatibus!</p>
+                                <button class="menu-list-item-button" type="button">WATCH</button> -->
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/6.jpg" alt="" class="movie-list-item-image">
+                            <!-- <span class="movie-list-item-title">Her</span>
+                            <p class="menu-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Modi laboriosam sunt excepturi. Animi assumenda magnam obcaecati, repellat vel cumque iste, 
+                                ratione nemo molestiae repellendus quasi quaerat fuga itaque adipisci necessitatibus!</p>
+                                <button class="menu-list-item-button" type="button">WATCH</button> -->
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/7.jpg" alt="" class="movie-list-item-image">
+                            <!-- <span class="movie-list-item-title">Her</span>
+                            <p class="menu-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Modi laboriosam sunt excepturi. Animi assumenda magnam obcaecati, repellat vel cumque iste, 
+                                ratione nemo molestiae repellendus quasi quaerat fuga itaque adipisci necessitatibus!</p>
+                                <button class="menu-list-item-button" type="button">WATCH</button> -->
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-angle-right arrow"></i>
+                    
+
+                </div>
+                <H1 class="movie-list-title">NEW RELEASES</H1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img src="img/11.jpg" alt="" class="movie-list-item-image">
+                            <!-- <span class="movie-list-item-title">Her</span>
+                            <p class="menu-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Modi laboriosam sunt excepturi. Animi assumenda magnam obcaecati, repellat vel cumque iste, 
+                                ratione nemo molestiae repellendus quasi quaerat fuga itaque adipisci necessitatibus!</p>
+                                <button class="menu-list-item-button" type="button">WATCH</button> -->
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/13.jpg" alt="" class="movie-list-item-image">
+                            <!-- <span class="movie-list-item-title">Her</span>
+                            <p class="menu-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Modi laboriosam sunt excepturi. Animi assumenda magnam obcaecati, repellat vel cumque iste, 
+                                ratione nemo molestiae repellendus quasi quaerat fuga itaque adipisci necessitatibus!</p>
+                                <button class="menu-list-item-button" type="button">WATCH</button> -->
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/14.jpg" alt="" class="movie-list-item-image">
+                            <!-- <span class="movie-list-item-title">Her</span>
+                            <p class="menu-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Modi laboriosam sunt excepturi. Animi assumenda magnam obcaecati, repellat vel cumque iste, 
+                                ratione nemo molestiae repellendus quasi quaerat fuga itaque adipisci necessitatibus!</p>
+                                <button class="menu-list-item-button" type="button">WATCH</button> -->
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/15.jpg" alt="" class="movie-list-item-image">
+                            <!-- <span class="movie-list-item-title">Her</span>
+                            <p class="menu-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Modi laboriosam sunt excepturi. Animi assumenda magnam obcaecati, repellat vel cumque iste, 
+                                ratione nemo molestiae repellendus quasi quaerat fuga itaque adipisci necessitatibus!</p>
+                                <button class="menu-list-item-button" type="button">WATCH</button> -->
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/5.jpg" alt="" class="movie-list-item-image">
+                            <!-- <span class="movie-list-item-title">Her</span>
+                            <p class="menu-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Modi laboriosam sunt excepturi. Animi assumenda magnam obcaecati, repellat vel cumque iste, 
+                                ratione nemo molestiae repellendus quasi quaerat fuga itaque adipisci necessitatibus!</p>
+                                <button class="menu-list-item-button" type="button">WATCH</button> -->
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/1.jpeg" alt="" class="movie-list-item-image">
+                            <!-- <span class="movie-list-item-title">Her</span>
+                            <p class="menu-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Modi laboriosam sunt excepturi. Animi assumenda magnam obcaecati, repellat vel cumque iste, 
+                                ratione nemo molestiae repellendus quasi quaerat fuga itaque adipisci necessitatibus!</p>
+                                <button class="menu-list-item-button" type="button">WATCH</button> -->
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/3.jpg" alt="" class="movie-list-item-image">
+                            <!-- <span class="movie-list-item-title">Her</span>
+                            <p class="menu-list-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Modi laboriosam sunt excepturi. Animi assumenda magnam obcaecati, repellat vel cumque iste, 
+                                ratione nemo molestiae repellendus quasi quaerat fuga itaque adipisci necessitatibus!</p>
+                                <button class="menu-list-item-button" type="button">WATCH</button>
+                        </div> -->
+                    </div>
+                    <i class="fa-solid fa-angle-right arrow"></i>
+
+                </div>
+        </div>
+    </div>
+
+       
+</body>
+</html>
+        
